@@ -4,7 +4,7 @@ execute as @e[type=minecart] at @s if block ~ ~1 ~ spawner if block ~ ~2 ~ #spaw
 #slow clock for passive regeneration
 scoreboard players add passive_clock gm4_spawner_fuel 1
 execute if score passive_clock gm4_spawner_fuel matches 750.. run scoreboard players set passive_clock gm4_spawner_fuel 0
-#value 75
+
 #slow clock for active regeneration
 scoreboard players add active_clock gm4_spawner_fuel 1
 execute if score active_clock gm4_spawner_fuel matches 2.. run scoreboard players set active_clock gm4_spawner_fuel 0
